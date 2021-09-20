@@ -1,0 +1,8 @@
+title Request resource w/ access token
+
+SimpleApp->Gateway: 1. Resource request
+Gateway->UAA: 2. Validate access token
+Gateway->Gateway: 3. Authorize scope of app
+Gateway->Cart: 4. Resource request
+Cart-->Gateway: 5. Resource response
+Gateway-->SimpleApp: 6. Resource response

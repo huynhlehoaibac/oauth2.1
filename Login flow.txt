@@ -1,0 +1,8 @@
+title Login flow
+
+Client->SimpleApp:1. Click login link
+SimpleApp->UAA:2. Request /authorize
+UAA->Client: 3. Redirect to login page
+Client->UAA: 4. Authenticate and Consent
+UAA->SimpleApp: 5. Authorization code
+SimpleApp->UAA: 6. Exchange code for token
